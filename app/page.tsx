@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <header>
         <nav>
-          <ul>
+          <ul data-testid="navbar" className="nav-list">
             <li>Home</li>
             <li>Womens</li>
             <li>Mens</li>
@@ -17,7 +17,9 @@ const Home = () => {
         </nav>
       </header>
       <main>
-        <Link href={`/products`}>Product Page</Link>
+        <Link data-testid="product-button" href={`/products`}>
+          Product Page
+        </Link>
       </main>
     </>
   );
